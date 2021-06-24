@@ -1,0 +1,67 @@
+/* General */
+
+#existing-team-container, #new-team-container, #common-team-container {
+    display: none;
+}
+
+.form-control {
+    height: 34px;
+}
+
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.g-recaptcha {
+    display: inline-block;
+}
+
+.captcha-container .form-control-feedback {
+    display: none;
+}
+
+/* Contact */
+
+#helptext {
+    margin-bottom: 1.5em;
+}
+
+/* Eligibility */
+
+#eligible-glyph {
+    vertical-align: middle;
+    font-size: 1.5em;
+    margin-right: 0.5em;
+}
+
+#eligible-message {
+    vertical-align: middle;
+}
+
+/* Spinning Glyphicons */
+
+.glyphicon.spinning {
+    animation: spin 1s infinite linear;
+    -webkit-animation: spin2 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin2 {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}

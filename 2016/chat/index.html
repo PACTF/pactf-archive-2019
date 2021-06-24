@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="description" content="PACTF: Phillips Academy Capture The Flag, an online computer security competition">
+<meta name="author" content="PACTF">
+<title>
+    
+  Chat - 
+      PACTF
+    
+
+  </title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="../static/icons/apple-touch-icon-57x57.b4d7751ed900.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../static/icons/apple-touch-icon-60x60.355dbed06a3c.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../static/icons/apple-touch-icon-72x72.2e6089b6f03f.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../static/icons/apple-touch-icon-76x76.e1b07cc3074b.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../static/icons/apple-touch-icon-114x114.8b0b6c0ac555.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../static/icons/apple-touch-icon-120x120.271577f7cb7d.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../static/icons/apple-touch-icon-144x144.89f2226aa32f.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../static/icons/apple-touch-icon-152x152.e701bf5eb402.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../static/icons/favicon-32x32.e5641a147e77.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../static/icons/favicon-96x96.d03c14e0c9a9.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../static/icons/favicon-16x16.a6fbcf96bd5a.png">
+<link rel="manifest" href="../static/icons/manifest.b86297f399d7.json">
+<link rel="mask-icon" href="../static/icons/safari-pinned-tab.ceab609ccc07.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../static/icons/favicon.7a0ea3d946fd.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/static/icons/mstile-144x144.8f9d9c856625.png">
+<meta name="msapplication-config" content="/static/icons/browserconfig.84cba7e2e576.xml">
+<meta name="theme-color" content="#5bbad5">
+<link rel="image_src" href="../static/ctflex/img/logo.4dd947d1ba72.png">
+
+<link rel="stylesheet" href="../static/ctflex/bootstrap-3.3.6-dist/css/bootstrap.yeti.min.9c0463ccbe70.css" />
+<link rel="stylesheet" href="../static/ctflex/jquery-ui-1.11.4/jquery-ui.min.26812a288503.css" />
+<link href="../static/ctflex/css/base.6cd36a731be3.css" rel="stylesheet">
+<link href="../static/ctflex/css/logo.3e253493d8af.css" rel="stylesheet">
+<link href="../static/ctflex/css/chat.f6c673225797.css" rel="stylesheet">
+
+<script src="../static/ctflex/js/lib/jquery.min.e40ec2161fe7.js" type="b7d04040b945ff5f628da316-text/javascript"></script>
+<script src="../static/ctflex/jquery-ui-1.11.4/jquery-ui.min.d935d506ae9c.js" type="b7d04040b945ff5f628da316-text/javascript"></script>
+<script src="../static/ctflex/js/lib/jquery.cookie.min.4412bf802310.js" type="b7d04040b945ff5f628da316-text/javascript"></script>
+<script src="../static/ctflex/bootstrap-3.3.6-dist/js/bootstrap.min.c5b5b2fa19bd.js" type="b7d04040b945ff5f628da316-text/javascript"></script>
+<script src="../static/ctflex/js/lib/notify.min.08ec3790d1fb.js" type="b7d04040b945ff5f628da316-text/javascript"></script>
+<script type="b7d04040b945ff5f628da316-text/javascript" src="../static/ctflex/js/ajax_utils.10a690fa3825.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top navbar-inverse">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand logo logo-inline" href="../index.html">
+
+<svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 250 165">
+<defs>
+<clipPath id="t-mask">
+<polygon points="
+            -100 0
+            -100 95
+            200 95
+            200 0
+            " />
+</clipPath>
+<clipPath id="f-mask">
+<polygon points="
+            5 5
+            5 100
+            50 100
+            50 5
+            " />
+</clipPath>
+</defs>
+<g id="container">
+<g id="p">
+<g id="pole" transform="
+            translate(5 65)
+            ">
+<polyline class="outline" points="
+                0 95
+                10 95
+                10 -60
+                0 -60
+                0 95
+                " />
+</g>
+<g id="flag" transform="
+            translate(15, 5)
+            ">
+<polygon class="fill" points="
+                0 0
+                230 50
+                0 50
+                " />
+<polyline class="outline" points="
+                0 0
+                230 50
+                0 50
+                " />
+</g>
+<polyline class="inline" points="
+            10 155
+            10 14
+            177 46
+            10 46
+            " />
+</g>
+<g id="actf">
+<g id="a" transform="
+            translate(29, 65)
+            ">
+<polygon class="fill" points="
+                0, 100
+                25, 0
+                50, 100
+                " />
+<polyline class="outline" points="
+                1, 95
+                25, 5
+                49, 95
+                " />
+<polyline class="inline" points="
+                10, 92
+                25, 30
+                40, 92
+                " />
+</g>
+<g id="c" transform="
+            translate(81, 65)
+            ">
+<polygon class="fill" points="
+                44, 95
+                0, 50
+                44, 5
+                " />
+<polyline class="outline" points="
+                39, 95
+                1, 50
+                39, 5
+                " />
+<polyline class="inline" points="
+                37, 85
+                10, 50
+                37, 15
+                " />
+</g>
+<g id="t" transform="
+            translate(135, 65)
+            ">
+<polygon class="fill" clip-path="url(#t-mask)" points="
+                -5 5
+                55 5
+                25 113
+                " />
+<polyline class="outline" points="
+                0 5
+                50 5
+                25 5
+                25 95
+                " />
+<polyline class="inline" points="
+                5 10
+                45 10
+                25 10
+                25 80
+                " />
+</g>
+<g id="f" transform="
+            translate(200 65)
+            ">
+<polygon class="fill" clip-path="url(#f-mask)" points="
+                53 0
+                -5 0
+                -5 116
+                " />
+<polyline class="outline" points="
+                45 5
+                0 5
+                0 95
+                " />
+<polyline class="inline" points="
+                40 10
+                5 10
+                5 80
+                " />
+</g>
+</g>
+</g>
+</svg>
+<span class="sr-only">PACTF</span>
+</a>
+</div>
+<div class="collapse navbar-collapse" id="navbar-collapse">
+<ul class="nav navbar-nav">
+<li><a href="../game/index.html">Game</a></li>
+<li><a href="../scoreboard/index.html">Scoreboard</a></li>
+<li>
+<a href="../news/index.html">
+News
+<span class="badge alert-danger" id="unread-announcements-badge">0</span>
+</a>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PACTF 2016<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="https://2017.pactf.com" target="_blank">PACTF 2017</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="../about/index.html">The Team</a></li>
+<li><a href="../sponsors/index.html">Our Sponsors</a></li>
+<li><a href="../prizes/index.html">Prizes</a></li>
+<li><a href="../winners/index.html">Winners</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="../learn/index.html">Learn</a></li>
+<li><a href="index.html">Chat</a></li>
+</ul>
+</li>
+<li><a href="../login/index.html">Login</a></li>
+<li><a href="../register/index.html">Register</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<header class="page-title">
+<div class="container">
+<h1>
+Chat
+</h1>
+</div>
+</header>
+<div id="content">
+<iframe src="https://kiwiirc.com/client/irc.freenode.net/?nick=pactf_user|?#pactf"></iframe>
+</div>
+
+<footer>
+<div class="container">
+<p id="footer-text" class="text-muted">
+© PACTF 2016
+| <a target="_blank" href="https://2017.pactf.com">PACTF 2017</a>
+| <a target="_blank" href="https://pactf.statuspage.io/">System Status</a>
+| <a target="_blank" href="mailto:contact@pactf.com">Contact Us</a>
+| Made with
+<span class="glyphicon glyphicon-heart"></span> at
+<a target="_blank" href="https://www.andover.edu/">Phillips Academy</a>
+</p>
+<div id="footer-sponsors" class="row">
+<a href="../sponsors/index.html">
+<img src="../static/pactf_web/img/sponsors/abbot.b983d0a4a2a6.png" />
+</a>
+<a href="../sponsors/index.html">
+<img src="../static/pactf_web/img/sponsors/cylab.06e4a732306c.png" />
+</a>
+<a href="../sponsors/index.html">
+<img src="../static/pactf_web/img/sponsors/moc.small.f07e0f4d651a.png" />
+</a>
+<a href="../sponsors/index.html">
+<img src="../static/pactf_web/img/sponsors/macs.new.678fdfa4669d.png" />
+</a>
+<a href="../sponsors/index.html">
+<img src="../static/pactf_web/img/sponsors/bu.3f30e6b8dcac.png" />
+</a>
+</div>
+</div>
+</footer>
+
+<script type="b7d04040b945ff5f628da316-text/javascript">
+    (function () {
+      window.js_context = {};
+      document.dispatchEvent(new Event('js_context'));
+    })();
+  </script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="b7d04040b945ff5f628da316-|49" defer=""></script></body>
+</html>

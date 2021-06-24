@@ -1,2 +1,3 @@
-# pactf-archive
-Static archive of pactf.com
+# PACTF Archive
+
+This repository houses a static archive of pactf.com.

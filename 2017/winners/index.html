@@ -1,0 +1,1584 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="description" content="PACTF: Phillips Academy Capture The Flag, an online computer security competition">
+<meta name="author" content="PACTF">
+<title>
+    
+  Winners - 
+      PACTF
+    
+
+  </title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="../static/icons/apple-touch-icon-57x57.b4d7751ed900.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../static/icons/apple-touch-icon-60x60.355dbed06a3c.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../static/icons/apple-touch-icon-72x72.2e6089b6f03f.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../static/icons/apple-touch-icon-76x76.e1b07cc3074b.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../static/icons/apple-touch-icon-114x114.8b0b6c0ac555.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../static/icons/apple-touch-icon-120x120.271577f7cb7d.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../static/icons/apple-touch-icon-144x144.89f2226aa32f.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../static/icons/apple-touch-icon-152x152.e701bf5eb402.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../static/icons/favicon-32x32.e5641a147e77.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../static/icons/favicon-96x96.d03c14e0c9a9.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../static/icons/favicon-16x16.a6fbcf96bd5a.png">
+<link rel="manifest" href="../static/icons/manifest.b86297f399d7.json">
+<link rel="mask-icon" href="../static/icons/safari-pinned-tab.ceab609ccc07.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../static/icons/favicon.7a0ea3d946fd.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/static/icons/mstile-144x144.8f9d9c856625.png">
+<meta name="msapplication-config" content="/static/icons/browserconfig.84cba7e2e576.xml">
+<meta name="theme-color" content="#5bbad5">
+<link rel="image_src" href="../static/ctflex/img/logo.4dd947d1ba72.png">
+
+<link rel="stylesheet" href="../static/ctflex/bootstrap-3.3.6-dist/css/bootstrap.yeti.min.9c0463ccbe70.css" />
+<link rel="stylesheet" href="../static/ctflex/jquery-ui-1.11.4/jquery-ui.min.26812a288503.css" />
+<link href="../static/ctflex/css/base.6cd36a731be3.css" rel="stylesheet">
+<link href="../static/ctflex/css/logo.3e253493d8af.css" rel="stylesheet">
+
+<script src="../static/ctflex/js/lib/jquery.min.e40ec2161fe7.js" type="8b8a3197b7a05652d92e0813-text/javascript"></script>
+<script src="../static/ctflex/jquery-ui-1.11.4/jquery-ui.min.d935d506ae9c.js" type="8b8a3197b7a05652d92e0813-text/javascript"></script>
+<script src="../static/ctflex/js/lib/jquery.cookie.min.4412bf802310.js" type="8b8a3197b7a05652d92e0813-text/javascript"></script>
+<script src="../static/ctflex/bootstrap-3.3.6-dist/js/bootstrap.min.c5b5b2fa19bd.js" type="8b8a3197b7a05652d92e0813-text/javascript"></script>
+<script src="../static/ctflex/js/lib/notify.min.08ec3790d1fb.js" type="8b8a3197b7a05652d92e0813-text/javascript"></script>
+<script type="8b8a3197b7a05652d92e0813-text/javascript" src="../static/ctflex/js/ajax_utils.10a690fa3825.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top navbar-inverse">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand logo logo-inline" href="../index.html">
+
+<svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 250 165">
+<defs>
+<clipPath id="t-mask">
+<polygon points="
+            -100 0
+            -100 95
+            200 95
+            200 0
+            " />
+</clipPath>
+<clipPath id="f-mask">
+<polygon points="
+            5 5
+            5 100
+            50 100
+            50 5
+            " />
+</clipPath>
+</defs>
+<g id="container">
+<g id="p">
+<g id="pole" transform="
+            translate(5 65)
+            ">
+<polyline class="outline" points="
+                0 95
+                10 95
+                10 -60
+                0 -60
+                0 95
+                " />
+</g>
+<g id="flag" transform="
+            translate(15, 5)
+            ">
+<polygon class="fill" points="
+                0 0
+                230 50
+                0 50
+                " />
+<polyline class="outline" points="
+                0 0
+                230 50
+                0 50
+                " />
+</g>
+<polyline class="inline" points="
+            10 155
+            10 14
+            177 46
+            10 46
+            " />
+</g>
+<g id="actf">
+<g id="a" transform="
+            translate(29, 65)
+            ">
+<polygon class="fill" points="
+                0, 100
+                25, 0
+                50, 100
+                " />
+<polyline class="outline" points="
+                1, 95
+                25, 5
+                49, 95
+                " />
+<polyline class="inline" points="
+                10, 92
+                25, 30
+                40, 92
+                " />
+</g>
+<g id="c" transform="
+            translate(81, 65)
+            ">
+<polygon class="fill" points="
+                44, 95
+                0, 50
+                44, 5
+                " />
+<polyline class="outline" points="
+                39, 95
+                1, 50
+                39, 5
+                " />
+<polyline class="inline" points="
+                37, 85
+                10, 50
+                37, 15
+                " />
+</g>
+<g id="t" transform="
+            translate(135, 65)
+            ">
+<polygon class="fill" clip-path="url(#t-mask)" points="
+                -5 5
+                55 5
+                25 113
+                " />
+<polyline class="outline" points="
+                0 5
+                50 5
+                25 5
+                25 95
+                " />
+<polyline class="inline" points="
+                5 10
+                45 10
+                25 10
+                25 80
+                " />
+</g>
+<g id="f" transform="
+            translate(200 65)
+            ">
+<polygon class="fill" clip-path="url(#f-mask)" points="
+                53 0
+                -5 0
+                -5 116
+                " />
+<polyline class="outline" points="
+                45 5
+                0 5
+                0 95
+                " />
+<polyline class="inline" points="
+                40 10
+                5 10
+                5 80
+                " />
+</g>
+</g>
+</g>
+</svg>
+<span class="sr-only">PACTF</span>
+</a>
+</div>
+<div class="collapse navbar-collapse" id="navbar-collapse">
+<ul class="nav navbar-nav">
+<li><a href="../game/index.html">Game</a></li>
+<li><a href="../scoreboard/index.html">Scoreboard</a></li>
+<li>
+<a href="../news/index.html">
+News
+<span class="badge alert-danger" id="unread-announcements-badge">0</span>
+</a>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PACTF 2017<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="https://2016.pactf.com" target="_blank">PACTF 2016</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="../about/index.html">The Team</a></li>
+<li><a href="../sponsors/index.html">Our Sponsors</a></li>
+<li><a href="../prizes/index.html">Prizes</a></li>
+<li><a href="index.html">Winners</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="../learn/index.html">Learn</a></li>
+<li><a href="../chat/index.html">Chat</a></li>
+</ul>
+</li>
+<li><a href="../login/index.html">Login</a></li>
+<li><a href="../register/index.html">Register</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<header class="page-title">
+<div class="container">
+<h1>
+Winning Teams
+</h1>
+</div>
+</header>
+<div id="content">
+<div class="text-center">
+<h2>Congratulations to all of our winning teams!</h2>
+<h3>
+PACTF 2017 proudly awarded <strong>over $20,000</strong> worth of <a href="../prizes/index.html">prizes</a>.<br />
+Check out the <a href="../sponsors/index.html">sponsors</a> that made PACTF possible.
+</h3>
+</div>
+<h2 class="text-center"><strong>Top Winners</strong></h2>
+<div class="row">
+<div class="panel-group col-sm-6 col-sm-push-3">
+<div class="panel panel-default">
+<div class="panel-heading">
+Overall Contest
+</div>
+<div class="list-group">
+<div class="list-group-item clearfix">
+<span class="bold">
+1st
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/421">Th3g3ntl3man</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+2nd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/145">AT-Fun</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+3rd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/162">phsst</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix hidden-sm-up"></div>
+<div class="panel-group col-sm-6">
+<div class="panel panel-default">
+<div class="panel-heading">
+Round 1: Bartik
+</div>
+<div class="list-group">
+<div class="list-group-item clearfix">
+<span class="bold">
+1st
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/421">Th3g3ntl3man</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+2nd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/234">Opensource Potato</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+3rd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/323">[ ]</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+4th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/576">SFHS Team C</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+5th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/542">foo</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="panel-group col-sm-6">
+<div class="panel panel-default">
+<div class="panel-heading">
+Round 2: Boole
+</div>
+<div class="list-group">
+<div class="list-group-item clearfix">
+<span class="bold">
+1st
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/162">phsst</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+2nd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/576">SFHS Team C</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+3rd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/421">Th3g3ntl3man</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+4th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/145">AT-Fun</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+5th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/231">GO GO MUSTANGS</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 class="text-center"><strong>All Winners</strong></h2>
+<div class="row">
+<div class="panel-group col-sm-4">
+<div class="panel panel-default">
+<div class="panel-heading">
+Overall Contest
+</div>
+<div class="list-group">
+<div class="list-group-item clearfix">
+<span class="bold">
+1st
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/421">Th3g3ntl3man</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+2nd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/145">AT-Fun</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+3rd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/162">phsst</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+4th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/508">Flaming Tigers</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+5th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/238">b1c</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+6th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/196">REEEEEEEEEEEEEEEEEEEEEEEEEEEEE</a>
+</span>
+</div>
+
+<div class="list-group-item clearfix">
+<span class="bold">
+7th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/418">sos brigade</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+8th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/234">Opensource Potato</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+9th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/62">MemeDream</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+10th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/489">unlimited reagents</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+11th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/567">BS and the Big Boys</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+12th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/576">SFHS Team C</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+13th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/231">GO GO MUSTANGS</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+14th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/243">How i Hacked your Mother</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+15th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/505">toastcookie</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+16th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/253">Quadnary</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+17th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/250">DragonTech</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+18th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/163">AREA</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+19th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/542">foo</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+20th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/747">Awkward Pinecone</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+21st
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/422">Alpha Lions</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+22nd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/689">Roaring Lions</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+23rd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/235">PentaHex</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+24th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/551">Bobby tables</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+25th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/302">Literal Dips</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+26th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/510">Kelly and the Pendergasts</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+27th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/581">5806 4</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+28th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/406">That One Solo Guy</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+29th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/376">AV1ct0r</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+30th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/386">Giascioch</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+31st
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/158">RagingStormsII</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+32nd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/272">SBHackers</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+33rd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/730">the respath</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+34th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/38">Omega</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+35th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/399">5 EXploiters</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+36th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/664">the_team</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+37th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/86">WestwoodHighSchool</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+38th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/437">Society of Entropy</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+39th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/289">Jelly Team</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+40th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/323">[ ]</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+41st
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/412">your waifu is trash</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+42nd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/67">TrinB</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+43rd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/319">Viewerisland</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+44th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/144">the meme dream team</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+45th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/72">DCUA</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+46th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/28">Yes</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+47th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/654">Readers15</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+48th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/251">Cocopods</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+49th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/404">vanhelsing</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+50th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/143">HipsterBabiez</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+51st
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/246">mymindstorm</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+52nd
+</span>
+ <span class="pull-right">
+<a href="https://2017.pactf.com/team/649">progRAMmers</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+53rd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/646">The Nobodies</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+54th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/706">Bronco Bytes</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+55th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/743">Origami</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+56th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/255">Luddites</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+57th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/233">Platzhalter</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+58th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/750">RIGEL</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+59th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/77">Red</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+60th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/476">Sweeties</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+61st
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/504">lololol</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+62nd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/377">.globlHax</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+63rd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/308">The 2600 Club</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+64th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/411">incertiabox</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+65th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/686">AGK&#39;s Backpack</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+66th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/741">b2c</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+67th
+</span>
+<span class="pull-right">
+ <a href="https://2017.pactf.com/team/676">Uhhhh</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+68th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/681">YetiBrigade</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+69th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/236">Invictus</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+70th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/310">pentacontagons</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+71st
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/631">Fruit Snackz 420</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+72nd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/95">Apophis</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+73rd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/70">HersheyHackers</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+74th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/501">Empty Set</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+75th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/817">ballsack</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+76th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/398">Kawaii</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+77th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/636">ADMAN</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+78th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/603">no</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+79th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/771">Columbus Academy</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+80th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/136">Kraken Inc.</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+81st
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/87">NHS Tech Squad</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+82nd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/721">4178656C</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+83rd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/799">Pink Panthers</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+84th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/808">\x00rniths</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+85th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/662">piccolos</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+86th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/573">cow goes μμμ</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+87th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/407">El Capitan de Sparkles</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+88th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/477">Aviato</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+89th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/349">Sundara</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+90th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/798">Abhinav and Collin</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+91st
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/331">THSA-Team</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+92nd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/651">pantherByte</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+93rd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/650">BATMAN!!!</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+94th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/550">Chowda Powda</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+95th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/232">obesity</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+96th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/129">Pepe Touché</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+97th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/320">AHS Grinders</a>
+ </span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+98th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/644">Team SPASH</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+99th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/641">I-Frames</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+100th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/68">Coders015628</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="panel-group col-sm-4">
+<div class="panel panel-default">
+<div class="panel-heading">
+Round 1: Bartik
+</div>
+<div class="list-group">
+<div class="list-group-item clearfix">
+<span class="bold">
+1st
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/421">Th3g3ntl3man</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+2nd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/234">Opensource Potato</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+3rd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/323">[ ]</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+4th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/576">SFHS Team C</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+5th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/542">foo</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+6th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/551">Bobby tables</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+7th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/162">phsst</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+8th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/418">sos brigade</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+9th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/422">Alpha Lions</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+10th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/508">Flaming Tigers</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+11th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/406">That One Solo Guy</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+12th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/238">b1c</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+13th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/747">Awkward Pinecone</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+14th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/231">GO GO MUSTANGS</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+15th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/489">unlimited reagents</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+16th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/145">AT-Fun</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+17th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/62">MemeDream</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+18th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/386">Giascioch</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+19th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/567">BS and the Big Boys</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+20th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/243">How i Hacked your Mother</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+21st
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/250">DragonTech</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+22nd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/196">REEEEEEEEEEEEEEEEEEEEEEEEEEEEE</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+23rd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/41">DlogokSec</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+24th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/689">Roaring Lions</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="panel-group col-sm-4">
+<div class="panel panel-default">
+<div class="panel-heading">
+Round 2: Boole
+</div>
+<div class="list-group">
+<div class="list-group-item clearfix">
+<span class="bold">
+1st
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/162">phsst</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+2nd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/576">SFHS Team C</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+3rd
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/421">Th3g3ntl3man</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+4th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/145">AT-Fun</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+5th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/231">GO GO MUSTANGS</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+6th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/234">Opensource Potato</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+7th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/62">MemeDream</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+8th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/418">sos brigade</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+9th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/243">How i Hacked your Mother</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+10th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/253">Quadnary</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+11th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/508">Flaming Tigers</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+12th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/489">unlimited reagents</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+13th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/196">REEEEEEEEEEEEEEEEEEEEEEEEEEEEE</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+ 14th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/505">toastcookie</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+15th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/567">BS and the Big Boys</a>
+</span>
+</div>
+<div class="list-group-item clearfix">
+<span class="bold">
+16th
+</span>
+<span class="pull-right">
+<a href="https://2017.pactf.com/team/238">b1c</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer>
+<div class="container">
+<p id="footer-text" class="text-muted">
+© PACTF 2021
+| <a target="_blank" href="https://2016.pactf.com">PACTF 2016</a>
+| <a target="_blank" href="https://pactf.statuspage.io/">System Status</a>
+| <a target="_blank" href="mailto:contact@pactf.com">Contact Us</a>
+| Made with
+<span class="glyphicon glyphicon-heart"></span> at
+<a target="_blank" href="https://www.andover.edu/">Phillips Academy</a>
+</p>
+<div id="footer-sponsors" class="row">
+<a href="../sponsors/index.html">
+<img src="../static/pactf_web/img/sponsors/amazon/awseducate.small.transparent.6c6c2d6b6662.png" />
+</a>
+<a href="../sponsors/index.html">
+<img src="../static/pactf_web/img/sponsors/digitalocean/blue.smaller.4d8e5076b663.png" />
+</a>
+<a href="../sponsors/index.html">
+<img src="../static/pactf_web/img/sponsors/jpmorgan/transparent.padded.2626f77e86e7.png" />
+</a>
+<a href="../sponsors/index.html">
+<img src="../static/pactf_web/img/sponsors/protonmail/purple.small.acabb2049b50.png" />
+</a>
+</div>
+</div>
+</footer>
+
+<script src="https://static.getclicky.com/js" type="8b8a3197b7a05652d92e0813-text/javascript"></script>
+<script type="8b8a3197b7a05652d92e0813-text/javascript">try{ clicky.init(101031819); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="https://in.getclicky.com/101031819ns.gif" /></p></noscript>
+<script type="8b8a3197b7a05652d92e0813-text/javascript">
+    (function () {
+      window.js_context = {};
+      document.dispatchEvent(new Event('js_context'));
+    })();
+  </script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="8b8a3197b7a05652d92e0813-|49" defer=""></script></body>
+</html>
